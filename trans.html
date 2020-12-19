@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html lang="en" class="application state-empty state-faked state-auto state-collection_dot state-autoheight"><head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="google" content="notranslate">
+        <meta name="keywords" content="translate, translator, translation, translation online, online translator, machine translation">
+        <meta name="viewport" content="width=1024">
+        
+        
+
+<script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script nonce="Dbz6mbbeTD">
+
+!function(i,t){if(i.Ya=i.Ya||{},Ya.Rum)throw new Error("Rum: interface is already defined");var n=i.performance,e=n&&n.timing&&n.timing.navigationStart||Ya.startPageLoad||+new Date,s=i.requestAnimationFrame;Ya.Rum={enabled:!!n,vsStart:document.visibilityState,vsChanged:!1,_defTimes:[],_defRes:[],_deltaMarks:{},_markListeners:{},_settings:{},_vars:{},init:function(i,t){this._settings=i,this._vars=t},getTime:n&&n.now?function(){return n.now()}:Date.now?function(){return Date.now()-e}:function(){return new Date-e},time:function(i){this._deltaMarks[i]=[this.getTime()]},timeEnd:function(i,t){var n=this._deltaMarks[i];n&&0!==n.length&&n.push(this.getTime(),t)},sendTimeMark:function(i,t,n,e){void 0===t&&(t=this.getTime()),this._defTimes.push([i,t,e]),this.mark(i,t)},sendResTiming:function(i,t){this._defRes.push([i,t])},sendRaf:function(i){var t=this.getSetting("forcePaintTimeSending");if(s&&(t||!this.isVisibilityChanged())){var n=this,e="2616."+i;s(function(){!t&&n.isVisibilityChanged()||(n.getSetting("sendFirstRaf")&&n.sendTimeMark(e+".205"),s(function(){!t&&n.isVisibilityChanged()||n.sendTimeMark(e+".1928")}))})}},isVisibilityChanged:function(){return this.vsStart&&("visible"!==this.vsStart||this.vsChanged)},mark:n&&n.mark?function(i,t){n.mark(i+(t?": "+t:""))}:function(){},getSetting:function(i){var t=this._settings[i];return null===t?null:t||""},on:function(i,t){"function"==typeof t&&(this._markListeners[i]=this._markListeners[i]||[]).push(t)},sendTrafficData:function(){},finalizeLayoutShiftScore:function(){},finalizeLargestContentfulPaint:function(){}},document.addEventListener&&document.addEventListener("visibilitychange",function i(){Ya.Rum.vsChanged=!0,document.removeEventListener("visibilitychange",i)})}(window);
+
+!function(){if(window.PerformanceLongTaskTiming){var e=function(e,n){return(e=e.concat(n)).length>300&&(e=e.slice(e.length-300)),e},n=Ya.Rum._tti={events:[],eventsAfterTTI:[],fired:!1,observer:new PerformanceObserver(function(r){var t=r.getEntries();n.events=e(n.events,t),n.fired&&(n.eventsAfterTTI=e(n.eventsAfterTTI,t))})};n.observer.observe({entryTypes:["longtask"]})}}();
+
+Ya.Rum.observeDOMNode=window.IntersectionObserver?function(e,i,n){var t=this,o=Ya.Rum.getSetting("forcePaintTimeSending");!function r(){if(o||!t.isVisibilityChanged()){var s="string"==typeof i?document.querySelector(i):i;s?new IntersectionObserver(function(i,n){!o&&t.isVisibilityChanged()||(Ya.Rum.sendTimeMark(e),n.unobserve(s))},n).observe(s):setTimeout(r,100)}}()}:function(){};
+
+!function(){var e,t=[];function n(){var n=Ya.Rum.getSetting("clck"),i=t.join("\r\n");if(t=[],e=null,n&&!(navigator.sendBeacon&&Ya.Rum.getSetting("beacon")&&navigator.sendBeacon(n,i))){var a=new XMLHttpRequest;a.open("POST",n),a.send(i)}}Ya.Rum.send=function(i,a,o,s,g,u,r){clearTimeout(e);var m=Ya.Rum.getSetting("slots"),c=Ya.Rum.getSetting("experiments"),v=["/reqid="+Ya.Rum.getSetting("reqid"),r?"/"+r.join("/"):"",a?"/path="+a:"",g?"/events="+g:"",m?"/slots="+m.join(";"):"",c?"/experiments="+c.join(";"):"",o?"/vars="+o:"","/cts="+(new Date).getTime(),"/*"];t.push(v.join("")),t.length<42?e=setTimeout(n,15):n()}}();
+
+Ya.Rum.enabled&&addEventListener("load",function e(){removeEventListener("load",e);var t=Ya.Rum;if(t.sendTimeMark("1724"),t.getSetting("sendAutoResTiming"))for(var a=document.querySelectorAll("script[data-rCid], div[data-rCid]"),r=0,d=a.length;r<d;r++){var i=a[r],n=i.src;if(!n){var m=getComputedStyle(i).backgroundImage;if(m){var o=m.match(/^url\(["']?(.*?)["']?\)$/);o&&(n=o[1])}}n&&t.sendResTiming(i.getAttribute("data-rCid"),n)}});
+
+Ya.Rum.enabled&&(Ya.Rum.sendRetriesCount=function(e,n){if(e&&n&&!(n<1)){var u=Ya.Rum.getVarsList();u.push("13="+encodeURIComponent(e),"1385="+n),Ya.Rum.sendCounter("690.2096.3037",u)}});
+
+!function(n){if(!n.Ya||!Ya.Rum)throw new Error("Rum: interface is not defined");var e=Ya.Rum;e.getSetting=function(n){var t=e._settings[n];return null===t?null:t||""}}("undefined"!=typeof self?self:window);
+
+!function(e,r){var n={client:["690.2354",1e3,100,0],uncaught:["690.2361",100,10,0],external:["690.2854",100,10,0],script:["690.2609",100,10,0]},t={};r.ERROR_LEVEL={INFO:"info",DEBUG:"debug",WARN:"warn",ERROR:"error",FATAL:"fatal"},r._errorSettings={clck:"https://yandex.ru/clck/click",beacon:!0,project:"unknown",page:"",env:"",experiments:[],additional:{},platform:"",region:"",dc:"",host:"",service:"",level:"",version:"",yandexuid:"",coordinates_gp:"",referrer:!0,preventError:!1,unhandledRejection:!1,uncaughtException:!0,debug:!1,limits:{},silent:{},filters:{},pageMaxAge:864e6,initTimestamp:+new Date};var o=!1;function a(e,r){for(var n in r)r.hasOwnProperty(n)&&(e[n]=r[n]);return e}function i(e){return"boolean"==typeof e&&(e=+e),"number"==typeof e?e+"":null}r.initErrors=function(n){a(r._errorSettings,n),!o&&r._errorSettings.uncaughtException&&(function(){if(e.addEventListener)e.addEventListener("error",s),"Promise"in e&&r._errorSettings.unhandledRejection&&e.addEventListener("unhandledrejection",function(e){var r,n=e.reason,t={};n&&(n.stack&&n.message?r=n.message:"[object Event]"===(r=String(n))?r="event.type: "+n.type:"[object Object]"===r&&(t.unhandledObject=n),n.target&&n.target.src&&(t.src=n.target.src),s({message:"Unhandled rejection: "+r,stack:n.stack,additional:t}))});else{var n=e.onerror;e.onerror=function(e,r,t,o,a){s({error:a||new Error(e||"Empty error"),message:e,lineno:t,colno:o,filename:r}),n&&n.apply(this,arguments)}}}(),o=!0)},r.updateErrors=function(e){a(r._errorSettings,e)},r.updateAdditional=function(e){r._errorSettings.additional=a(r._errorSettings.additional||{},e)},r._handleError=function(e,o){var a,i,s=r._errorSettings;if(s.preventError&&e.preventDefault&&e.preventDefault(),o)a=e,i="client";else{a=r._normalizeError(e),i=a.type;var l=s.onError;"function"==typeof l&&l(a);var c=s.transform;"function"==typeof c&&(a=c(a))}var u=+new Date,d=s.initTimestamp,f=s.pageMaxAge;if(!(-1!==f&&d&&d+f<u)){var g=n[i][1];"number"==typeof s.limits[i]&&(g=s.limits[i]);var p=n[i][2];"number"==typeof s.silent[i]&&(p=s.silent[i]);var m=n[i][3];if(m<g||-1===g){a.path=n[i][0];var v=r._getErrorData(a,{silent:m<p||-1===p?"no":"yes",isCustom:Boolean(o)},s),h=function(e){t[a.message]=!1,r._sendError(e.path,e.vars),n[i][3]++}.bind(this,v);if(void 0===s.throttleSend)h();else{if(t[a.message])return;t[a.message]=!0,setTimeout(h,s.throttleSend)}}}},r._getReferrer=function(r){var n=r.referrer,t=typeof n;return"function"===t?n():"string"===t&&n?n:!1!==n&&e.location?e.location.href:void 0},r._getErrorData=function(n,t,o){t=t||{};var s="";try{var l=a(a({},o.additional),n.additional);0!==Object.keys(l).length&&(s=JSON.stringify(l))}catch(r){o.debug&&e.console&&console.error("[error-counter] json.stringify:",r)}var c=o.experiments instanceof Array?o.experiments.join(";"):"",u={"-stack":n.stack,"-url":n.file,"-line":n.line,"-col":n.col,"-block":n.block,"-method":n.method,"-msg":n.message,"-env":o.env,"-external":n.external,"-externalCustom":n.externalCustom,"-project":o.project,"-service":n.service||o.service,"-page":n.page||o.page,"-platform":o.platform,"-level":n.level,"-experiments":c,"-version":o.version,"-region":o.region,"-dc":o.dc,"-host":o.host,"-yandexuid":o.yandexuid,"-coordinates_gp":n.coordinates_gp||o.coordinates_gp,"-referrer":r._getReferrer(o),"-source":n.source,"-sourceMethod":n.sourceMethod,"-type":t.isCustom?n.type:"","-additional":s,"-adb":i(Ya.blocker)||i(o.blocker),"-cdn":e.YaStaticRegion,"-ua":navigator.userAgent,"-silent":t.silent,"-ts":+new Date,"-init-ts":o.initTimestamp};return o.debug&&e.console&&console[console[n.level]?n.level:"error"]("[error-counter] "+n.message,u,n.stack),{path:n.path,vars:u}},r._baseNormalizeError=function(e){var r=(e=e||{}).filename||e.fileName||"",n=e.error&&e.error.stack||e.stack||"",t=e.message||"";return{file:r,line:e.lineno||e.lineNumber,col:e.colno||e.colNumber,stack:n,message:t,additional:e.additional}},r._normalizeError=function(e){var n=r._baseNormalizeError(e),t="uncaught",o=r._isExternalError(n.file,n.message,n.stack),a="",i="";return o.hasExternal?(t="external",a=o.common,i=o.custom):/^Script error\.?$/.test(n.message)&&(t="script"),n.external=a,n.externalCustom=i,n.type=t,n},r._sendError=function(e,n){r.send(null,e,function(e){var r=[];for(var n in e)e.hasOwnProperty(n)&&(e[n]||0===e[n])&&r.push(n+"="+encodeURIComponent(e[n]).replace(/\*/g,"%2A"));return r.join(",")}(n),null,null,null,null)};var s=function(e){r._handleError(e,!1)}}("undefined"!=typeof self?self:window,Ya.Rum);
+
+!function(e){var r={url:{0:/(miscellaneous|extension)_bindings/,1:/^chrome:/,2:/kaspersky-labs\.com\//,3:/^(?:moz|chrome)-extension:\/\//,4:/^file:/,5:/^resource:\/\//,6:/webnetc\.top/,7:/local\.adguard\.com/},message:{0:/__adgRemoveDirect/,1:/Content Security Policy/,2:/vid_mate_check/,3:/ucapi/,4:/Access is denied/i,5:/^Uncaught SecurityError/i,6:/__ybro/,7:/__show__deepen/,8:/ntp is not defined/,9:/Cannot set property 'install' of undefined/,10:/NS_ERROR/,11:/Error loading script/,12:/^TypeError: undefined is not a function$/,13:/__firefox__\.(?:favicons|metadata|reader|searchQueryForField|searchLoginField)/},stack:{0:/(?:moz|chrome)-extension:\/\//,1:/adguard.*\.user\.js/i}};function n(e,r){if(e&&r){var n=[];for(var o in r)if(r.hasOwnProperty(o)){var i=r[o];"string"==typeof i&&(i=new RegExp(i)),i instanceof RegExp&&i.test(e)&&n.push(o)}return n.join("_")}}function o(e,o){var i,t=[];for(var s in r)r.hasOwnProperty(s)&&(i=n(e[s],o[s]))&&t.push(s+"~"+i);return t.join(";")}e._isExternalError=function(n,i,t){var s=e._errorSettings.filters||{},a={url:(n||"")+"",message:(i||"")+"",stack:(t||"")+""},c=o(a,r),u=o(a,s);return{common:c,custom:u,hasExternal:!(!c&&!u)}}}(Ya.Rum);
+
+!function(){"use strict";var e;(e=Ya.Rum).logError=function(r,o){r=r||{},"string"!=typeof o&&void 0!==o||((o=new Error(o)).justCreated=!0);var a=r.message||"",s=e._baseNormalizeError(o);s.message&&(a&&(a+="; "),a+=s.message),s.message=a||"Empty error";for(var t=["service","source","type","block","additional","level","page","method","sourceMethod","coordinates_gp"],i=0;i<t.length;i++){var n=t[i];r[n]?s[n]=r[n]:o&&o[n]&&(s[n]=o[n])}e._handleError(s,!0)}}();
+
+
+Ya.Rum.init({
+    beacon: true,
+    clck: 'https://yandex.com/clck/click',
+    slots: [],
+    reqid: Date.now() + ':' + Math.random(),
+    crossOrigin: '',
+    sendClientUa: true,
+    sendBeforeBemInited: true,
+    sendUrlInResTiming: true,
+    sendFirstRaf: true
+}, {
+    '287': '213',
+    '143': '28.575.2048',
+    '-project': 'translate',
+    '-env': 'production',
+    '-platform': 'desktop',
+    '-version': 'v20.12.3',
+});
+
+Ya.Rum.initErrors({
+    project: 'translate',
+    page: 'desktop_new',
+    env: 'production',
+    platform: 'desktop',
+    version: 'v20.12.3',
+    limits: {
+        client: 10,
+        uncaught: 100,
+        script: 0,
+        external: 10
+    },
+    filters: {
+        message: {
+            '0': /document\.querySelectorAll\(\.\.\.\)\[Symbol\.iterator\] is not a function/,
+            '1': /document\.getElementsByClassName\("translation"\)\[0\]\.innerText/,
+            '2': /ResizeObserver loop limit exceeded/,
+            '3': /ResizeObserver loop completed with undelivered notifications/,
+        },
+        stack: {
+            '0': /^$/,
+        }
+    },
+    throttleSend: 0,
+    transform: function (error) {
+        if (window._rumLatestTapEvent) {
+            var latestTap = window._rumLatestTapEvent;
+            if (latestTap.ts) {
+                latestTap.delay = Date.now() - latestTap.ts;
+                delete latestTap.ts;
+            }
+            error.additional = latestTap;
+        }
+        return error;
+    }
+});
+</script>
+
+
+
+        <link href="/opensearch.xml" rel="search" type="application/opensearchdescription+xml" title="Yandex.Translate">
+        <link href="/icons/favicon.ico" rel="icon" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
+        <link href="/icons/favicon.png" rel="apple-touch-icon" sizes="192x192">
+        
+        <link rel="canonical" href="https://translate.yandex.com">
+        <link rel="alternate" hreflang="ru" href="https://translate.yandex.ru">
+        <link rel="alternate" hreflang="ru-UA" href="https://translate.yandex.ua/?ui=ru">
+        <link rel="alternate" hreflang="be" href="https://translate.yandex.by">
+        <link rel="alternate" hreflang="ru-BY" href="https://translate.yandex.by/?ui=ru">
+        <link rel="alternate" hreflang="kk" href="https://translate.yandex.kz">
+        <link rel="alternate" hreflang="ru-KZ" href="https://translate.yandex.kz/?ui=ru">
+        <link rel="alternate" hreflang="uk" href="https://translate.yandex.ua">
+        <link rel="alternate" hreflang="en" href="https://translate.yandex.com">
+        <link rel="alternate" hreflang="tr" href="https://ceviri.yandex.com.tr">
+        
+        <title>Yandex.Translate – dictionary and online translation between English and over 90 other languages.</title>
+        <style nonce="Dbz6mbbeTD">
+            .spinner,
+            .message_yellow,
+            .external-panel_right,
+            .application.state-unresolved {
+                visibility: hidden;
+            }
+            .state-hidden {
+                display: none;
+            }
+        </style>
+        
+        </style>
+        
+        <link rel="stylesheet" href="https://yastatic.net/s3/translate/v20.12.3/styles/bundles/main.css" type="text/css">
+        <link rel="stylesheet" href="https://yastatic.net/s3/translate/v20.12.3/styles/bundles/text.css" type="text/css">
+        
+    </head>
+    <body data-text="" data-lang="">    
+           </div></div><a href="https://passport.yandex.com/auth?origin=translate&amp;retpath=https%3A%2F%2Ftranslate.yandex.com%2F" class="button button_enter button_normal" tabindex="1">Log in</a></div><div id="tableau" class="tableau state-hidden state-unselectable state-hidden2" style="height: 282px;"><iframe id="tableauFrame" class="tableau-frame" frameborder="0" allowtransparency="true" src="https://yastatic.net/tableau/tableau.html?lang=en&amp;preset=com&amp;domain=com&amp;device=desktop&amp;service-id=translate"></iframe></div></div><div id="mainContainer" class="main"><div class="spacer" data-resizer-spacer="true"></div><div class="container container_main" data-resizer-target="true" style="height: 90px;"><div class="container-item container-item_left"><div class="panel"><span id="clearButton" role="button" class="button button_icon button_icon_clear state-disabled" tabindex="5" aria-label="Clear" data-tooltip="Clear" data-tooltip-position="top" data-tracking-data="{}"></span><div class="inline-block" data-tracking-data="{&quot;id&quot;: &quot;textSpeaker&quot;}"><span id="textNativeSpeaker" role="button" tabindex="5" class="button button_icon button_icon_speaker state-disabled" aria-label="Read out loud" data-tooltip="Read out loud" data-tooltip-position="top"></span><span id="textSpeaker" role="button" tabindex="5" class="button button_icon button_icon_speaker state-disabled state-invalid" aria-label="Read out loud" data-tooltip="Read out loud" data-tooltip-position="top"></span></div><span id="microphone" role="button" tabindex="5" class="button button_icon button_icon_microphone" aria-label="Voice input" data-tooltip="Voice input" data-tooltip-position="top" data-tracking-data="{}"></span><span id="keyboardButton" role="button" tabindex="5" class="button button_icon button_icon_keyboard" aria-label="On-screen keyboard" data-tooltip="On-screen keyboard" data-tooltip-position="top" data-tracking-data="{}"></span><span id="spellerButton" role="button" tabindex="5" class="button button_icon button_icon_speller state-active" aria-label="Autocorrect spelling" data-tooltip="Autocorrect spelling" data-tooltip-position="top" data-tracking-data="{}"></span><span id="srcLangButton" class="button button_select button_select_source" tabindex="2" data-tooltip="Choose source language" data-tooltip-position="top" data-tracking-data="{}">English</span></div><div id="textbox" class="textwrapper state-empty" lang="en"><canvas id="volume" class="volume state-hidden state-fadeaway" width="120" height="120"></canvas><div class="textbox" data-tracking-data="{&quot;id&quot;: &quot;srcTextbox&quot;}"><span class="placeholder">Enter text, a website address, or drag and drop a document or image here</span><div id="alignment" class="textinput textlayer textlayer_measurer textlayer_measurer_alignment state-hidden"></div><div id="speller" class="textinput textlayer textlayer_measurer textlayer_measurer_speller state-unselectable"><span class="speller-chunk"></span>.</div><div id="interim" class="textinput textlayer textlayer_measurer textlayer_measurer_interim state-unselectable"></div><div id="measurer" class="textinput textlayer textlayer_measurer"></div><div id="textLayer" class="textinput textlayer textlayer_measurer textlayer_measurer_layer textlayer_measurer_textarea"></div><div class="fakearea-container"><div id="fakeArea" class="fakearea textinput textlayer" tabindex="1" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false" contenteditable="true"></div></div><textarea id="textarea" class="textarea textinput textlayer" tabindex="1" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false" disabled="true"></textarea><div id="predictor" class="predictor state-hidden state-unselectable state-disabled" tabindex="-1" unselectable="on"></div><div id="suggestions" class="suggestions state-hidden state-unselectable" tabindex="-1" unselectable="on"></div><div id="spellerListbox" class="listbox listbox_fixed state-hidden state-fadeaway state-unselectable"></div><div id="textCounter" class="message message_external message_textlimit state-unselectable"><div id="sourceTranslitButton" class="button state-hidden" data-text-show="Show transliteration" data-text-hide="Hide transliteration"></div><div class="message-text"><span id="textCounterContent">0</span> / 10000</div></div></div></div></div><div class="container-item container-item_right"><div class="panel"><span id="dstLangButton" class="button button_select button_select_target" tabindex="4" data-tooltip="Choose target language" data-tooltip-position="top" data-tracking-data="{}">Russian</span><span id="favButton" role="button" class="button button_icon button_icon_favourites state-disabled" tabindex="6" aria-label="Add to collection" data-tooltip="Add to collection" data-tooltip-position="top" data-tracking-data="{}"></span><div class="inline-block" data-tracking-data="{&quot;id&quot;: &quot;translatorSpeaker&quot;}"><span id="translatorNativeSpeaker" role="button" class="button button_icon button_icon_speaker state-disabled" tabindex="6" aria-label="Read out loud" data-tooltip="Read out loud" data-tooltip-position="top"></span><span id="translatorSpeaker" role="button" class="button button_icon button_icon_speaker state-disabled state-invalid" tabindex="6" aria-label="Read out loud" data-tooltip="Read out loud" data-tooltip-position="top"></span></div><span id="copyButton" role="button" class="button button_icon button_icon_copy state-disabled state-copy" tabindex="6" aria-label="Select all" data-tooltip="Copy" data-tooltip-position="top" data-tracking-data="{}" data-tooltip-nohide="true"></span><span id="shareButton" role="button" class="button button_icon button_icon_share state-disabled" tabindex="6" aria-label="Share" data-tooltip="Share" data-tooltip-position="top" data-tracking-data="{}"></span><span id="goodVoteButton" role="button" class="button button_icon button_icon_thumbsup state-disabled" tabindex="6" aria-label="Good translation" data-tooltip="Good translation" data-tooltip-position="top" data-tracking-data="{}"></span><span id="badVoteButton" role="button" class="button button_icon button_icon_thumbsdown state-disabled" tabindex="6" aria-label="Bad translation" data-tooltip="Bad translation" data-tooltip-position="top" data-tracking-data="{}"></span></div><div id="textbox2" class="textwrapper state-hidden" lang="ru"><div class="textbox" data-tracking-data="{&quot;id&quot;: &quot;dstTextbox&quot;}"><div id="external" class="message message_external state-hidden state-fadeaway state-unselectable"><div id="targetTranslitButton" class="button state-hidden" data-text-show="Show transliteration" data-text-hide="Hide transliteration" data-tracking-data="{}"></div><div class="message-text" data-tracking-data="{&quot;id&quot;: &quot;externalTranslate&quot;}">Translate in<span id="externalContent"></span></div></div><div class="message message_yellow message_vote_good"><div class="message-text message-content message-content_extra" data-inner-text="Thanks!"></div></div><div class="message message_yellow message_vote_bad"><div class="message-content message-content_main"><span class="message-text" data-inner-text="Thanks!"></span><span class="button button_active" data-action="openEditing" data-inner-text="Suggest a translation"></span><span class="button" data-action="refuseEditing" data-inner-text="Close"></span></div></div><div class="message message_yellow message_warning"><span class="message-text" data-inner-text="Couldn't complete translation"></span><span class="button button_active" data-action="retry" data-inner-text="Try again"></span></div><div class="message message_yellow message_alternative_error"><span class="message-text" data-inner-text="Couldn't complete translation"></span></div><div class="message message_yellow message_url"><span class="button button_active" data-action="translatePage" data-inner-text="Translate page"></span></div><div class="message message_yellow message_complain"><span class="button button_active" data-action="sendSuggestion" data-inner-text="Send"></span><span class="button" data-action="cancelTranslationSuggestion" data-inner-text="Cancel"></span></div><div id="measurerDst" class="textinput textlayer textlayer_measurer"></div><div id="translationLayer" tabindex="-1" class="textinput textlayer textlayer_measurer textlayer_measurer_layer textlayer_measurer_translation"></div><div class="translation-container"><pre id="translation" tabindex="-1" class="textinput textlayer translation state-fadeaway" contenteditable="true"></pre></div><textarea id="textarea2" class="editor textinput textlayer state-empty" tabindex="-1" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false"></textarea><div id="predictorDst" class="predictor state-hidden state-unselectable state-disabled" tabindex="-1" unselectable="on"></div><div class="spinner overlay overlay_white state-fadeaway"><span class="button button_icon button_icon_spinner"></span></div><div id="alternativesListbox" class="listbox listbox_alternatives listbox_fixed state-hidden state-fadeaway state-unselectable state-disabled"></div><div id="alternativesTooltip" class="predictor alternatives_tooltip state-hidden state-unselectable" tabindex="-1" unselectable="on" data-align="predictorRight"></div><form id="urlForm" class="url-form textinput textlayer state-hidden state-fadeaway" method="post" action="/translate"></form></div></div><div id="selectTooltip" class="tooltip select-tooltip state-unselectable" data-position="top" data-align="center">Select the text to see examples</div></div><div role="button" class="button button_icon button_icon_swap" tabindex="3" data-tooltip="Swap source and target languages" data-tooltip-position="top" data-action="swapDirection" data-tracking-data="{&quot;id&quot;: &quot;swapLang&quot;}"></div><div id="resizer" class="button button_icon button_icon_resizer state-hidden"></div></div><div class="container container_rubber"><div class="container_rubber_body"><div id="historyRecent" class="history_records state-disabled"><!---->
+           
+            </li>
+        
+        
+    </ul>
+    
+    
+        <div class="listbox-option state-unselectable" data-value="odnoklassniki" unselectable="on"></div>
+    </div><div class="listbox-option" data-action="collectionMail" unselectable="on"></div></div></div></div></div><div id="subscribeTooltip" class="tooltip subscribe-tooltip state-unselectable state-hidden" data-position="bottom" data-align="center" data-text-limit="You have the maximum number of collections"></div><div id="errorToast" class="error-toast state-hidden"><span class="button_icon_close"></span><div id="errorToastContent"></div></div><div id="srcLangListbox" role="listbox" class="listbox listbox_language listbox_language_source state-hidden state-fadeaway state-unselectable" data-align="left" data-offset="20"><div class="listbox-column listbox-column_extra"><div class="listbox-option listbox-option_checkbox" data-action="toggleAuto">Auto detect</div><div id="srcLangHistory" class="listbox-history state-empty"><div class="listbox-option listbox-option_label">Recent</div><div id="srcLangHistoryContent"></div></div></div><div id="srcLangListboxContent" class="listbox-column listbox-column_main"><div class="listbox-column" unselectable="on">
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="af" unselectable="on">Afrikaans</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sq" unselectable="on">Albanian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="am" unselectable="on">Amharic<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="ar" unselectable="on">Arabic</div>
+    
+        <div class="listbox-option state-unselectable" data-value="hy" unselectable="on">Armenian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="az" unselectable="on">Azerbaijani</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ba" unselectable="on">Bashkir</div>
+    
+        <div class="listbox-option state-unselectable" data-value="eu" unselectable="on">Basque</div>
+    
+        <div class="listbox-option state-unselectable" data-value="be" unselectable="on">Belarusian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="bn" unselectable="on">Bengali</div>
+    
+        <div class="listbox-option state-unselectable" data-value="bs" unselectable="on">Bosnian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="bg" unselectable="on">Bulgarian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="my" unselectable="on">Burmese<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ca" unselectable="on">Catalan</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ceb" unselectable="on">Cebuano</div>
+    
+        <div class="listbox-option state-unselectable" data-value="zh" unselectable="on">Chinese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="cv" unselectable="on">Chuvash</div>
+    
+        <div class="listbox-option state-unselectable" data-value="hr" unselectable="on">Croatian</div>
+    </div><div class="listbox-column" unselectable="on">
+        <div class="listbox-option state-unselectable" data-value="cs" unselectable="on">Czech</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="da" unselectable="on">Danish</div>
+    
+        <div class="listbox-option state-unselectable" data-value="nl" unselectable="on">Dutch</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="sjn" unselectable="on">Elvish (Sindarin)<span class="listbox-option-tag listbox-option-tag_alpha">α</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="emj" unselectable="on">Emoji</div>
+    
+        <div class="listbox-option state-selected state-unselectable" data-value="en" unselectable="on">English</div>
+    
+        <div class="listbox-option state-unselectable" data-value="eo" unselectable="on">Esperanto</div>
+    
+        <div class="listbox-option state-unselectable" data-value="et" unselectable="on">Estonian</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="fi" unselectable="on">Finnish</div>
+    
+        <div class="listbox-option state-unselectable" data-value="fr" unselectable="on">French</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="gl" unselectable="on">Galician</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ka" unselectable="on">Georgian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="de" unselectable="on">German</div>
+    
+        <div class="listbox-option state-unselectable" data-value="el" unselectable="on">Greek</div>
+    
+        <div class="listbox-option state-unselectable" data-value="gu" unselectable="on">Gujarati</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ht" unselectable="on">Haitian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="he" unselectable="on">Hebrew</div>
+    
+        <div class="listbox-option state-unselectable" data-value="mrj" unselectable="on">Hill Mari<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    </div><div class="listbox-column" unselectable="on">
+        <div class="listbox-option state-unselectable" data-value="hi" unselectable="on">Hindi</div>
+    
+        <div class="listbox-option state-unselectable" data-value="hu" unselectable="on">Hungarian</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="is" unselectable="on">Icelandic</div>
+    
+        <div class="listbox-option state-unselectable" data-value="id" unselectable="on">Indonesian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ga" unselectable="on">Irish</div>
+    
+        <div class="listbox-option state-unselectable" data-value="it" unselectable="on">Italian</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ja" unselectable="on">Japanese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="jv" unselectable="on">Javanese</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="kn" unselectable="on">Kannada</div>
+    
+        <div class="listbox-option state-unselectable" data-value="kk" unselectable="on">Kazakh</div>
+    
+        <div class="listbox-option state-unselectable" data-value="kazlat" unselectable="on">Kazakh (Latin)<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="km" unselectable="on">Khmer</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ko" unselectable="on">Korean</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ky" unselectable="on">Kyrgyz<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="lo" unselectable="on">Lao<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="la" unselectable="on">Latin</div>
+    
+        <div class="listbox-option state-unselectable" data-value="lv" unselectable="on">Latvian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="lt" unselectable="on">Lithuanian</div>
+    </div><div class="listbox-column" unselectable="on">
+        <div class="listbox-option state-unselectable" data-value="lb" unselectable="on">Luxembourgish</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="mk" unselectable="on">Macedonian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="mg" unselectable="on">Malagasy</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ms" unselectable="on">Malay</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ml" unselectable="on">Malayalam<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="mt" unselectable="on">Maltese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="mi" unselectable="on">Maori</div>
+    
+        <div class="listbox-option state-unselectable" data-value="mr" unselectable="on">Marathi</div>
+    
+        <div class="listbox-option state-unselectable" data-value="mhr" unselectable="on">Mari<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="mn" unselectable="on">Mongolian<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ne" unselectable="on">Nepali</div>
+    
+        <div class="listbox-option state-unselectable" data-value="no" unselectable="on">Norwegian</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="pap" unselectable="on">Papiamento<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="fa" unselectable="on">Persian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="pl" unselectable="on">Polish</div>
+    
+        <div class="listbox-option state-unselectable" data-value="pt" unselectable="on">Portuguese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="pa" unselectable="on">Punjabi</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ro" unselectable="on">Romanian</div>
+    </div><div class="listbox-column" unselectable="on">
+        <div class="listbox-option state-unselectable" data-value="ru" unselectable="on">Russian</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="gd" unselectable="on">Scottish Gaelic</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sr" unselectable="on">Serbian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="si" unselectable="on">Sinhalese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sk" unselectable="on">Slovak</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sl" unselectable="on">Slovenian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="es" unselectable="on">Spanish</div>
+    
+        <div class="listbox-option state-unselectable" data-value="su" unselectable="on">Sundanese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sw" unselectable="on">Swahili</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sv" unselectable="on">Swedish</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="tl" unselectable="on">Tagalog</div>
+    
+        <div class="listbox-option state-unselectable" data-value="tg" unselectable="on">Tajik<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="ta" unselectable="on">Tamil<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="tt" unselectable="on">Tatar</div>
+    
+        <div class="listbox-option state-unselectable" data-value="te" unselectable="on">Telugu<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="th" unselectable="on">Thai</div>
+    
+        <div class="listbox-option state-unselectable" data-value="tr" unselectable="on">Turkish</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="udm" unselectable="on">Udmurt<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    </div><div class="listbox-column" unselectable="on">
+        <div class="listbox-option state-unselectable" data-value="uk" unselectable="on">Ukrainian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ur" unselectable="on">Urdu</div>
+    
+        <div class="listbox-option state-unselectable" data-value="uz" unselectable="on">Uzbek</div>
+    
+        <div class="listbox-option state-unselectable" data-value="uzbcyr" unselectable="on">Uzbek (Cyrillic)</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="vi" unselectable="on">Vietnamese</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="cy" unselectable="on">Welsh</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="xh" unselectable="on">Xhosa<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="sah" unselectable="on">Yakut<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="yi" unselectable="on">Yiddish</div>
+    </div></div></div><div id="dstLangListbox" role="listbox" class="listbox listbox_language listbox_language_target state-hidden state-fadeaway state-unselectable" data-align="left" data-offset="20"><div id="dstLangHistory" class="listbox-column listbox-column_extra listbox-history state-empty"><div class="listbox-option listbox-option_label">Recent</div><div id="dstLangHistoryContent"></div></div><div id="dstLangListboxContent" class="listbox-column listbox-column_main"><div class="listbox-column" unselectable="on">
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="af" unselectable="on">Afrikaans</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sq" unselectable="on">Albanian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="am" unselectable="on">Amharic<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="ar" unselectable="on">Arabic</div>
+    
+        <div class="listbox-option state-unselectable" data-value="hy" unselectable="on">Armenian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="az" unselectable="on">Azerbaijani</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ba" unselectable="on">Bashkir</div>
+    
+        <div class="listbox-option state-unselectable" data-value="eu" unselectable="on">Basque</div>
+    
+        <div class="listbox-option state-unselectable" data-value="be" unselectable="on">Belarusian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="bn" unselectable="on">Bengali</div>
+    
+        <div class="listbox-option state-unselectable" data-value="bs" unselectable="on">Bosnian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="bg" unselectable="on">Bulgarian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="my" unselectable="on">Burmese<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ca" unselectable="on">Catalan</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ceb" unselectable="on">Cebuano</div>
+    
+        <div class="listbox-option state-unselectable" data-value="zh" unselectable="on">Chinese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="cv" unselectable="on">Chuvash</div>
+    
+        <div class="listbox-option state-unselectable" data-value="hr" unselectable="on">Croatian</div>
+    </div><div class="listbox-column" unselectable="on">
+        <div class="listbox-option state-unselectable" data-value="cs" unselectable="on">Czech</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="da" unselectable="on">Danish</div>
+    
+        <div class="listbox-option state-unselectable" data-value="nl" unselectable="on">Dutch</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="sjn" unselectable="on">Elvish (Sindarin)<span class="listbox-option-tag listbox-option-tag_alpha">α</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="emj" unselectable="on">Emoji</div>
+    
+        <div class="listbox-option state-unselectable" data-value="en" unselectable="on">English</div>
+    
+        <div class="listbox-option state-unselectable" data-value="eo" unselectable="on">Esperanto</div>
+    
+        <div class="listbox-option state-unselectable" data-value="et" unselectable="on">Estonian</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="fi" unselectable="on">Finnish</div>
+    
+        <div class="listbox-option state-unselectable" data-value="fr" unselectable="on">French</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="gl" unselectable="on">Galician</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ka" unselectable="on">Georgian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="de" unselectable="on">German</div>
+    
+        <div class="listbox-option state-unselectable" data-value="el" unselectable="on">Greek</div>
+    
+        <div class="listbox-option state-unselectable" data-value="gu" unselectable="on">Gujarati</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ht" unselectable="on">Haitian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="he" unselectable="on">Hebrew</div>
+    
+        <div class="listbox-option state-unselectable" data-value="mrj" unselectable="on">Hill Mari<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    </div><div class="listbox-column" unselectable="on">
+        <div class="listbox-option state-unselectable" data-value="hi" unselectable="on">Hindi</div>
+    
+        <div class="listbox-option state-unselectable" data-value="hu" unselectable="on">Hungarian</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="is" unselectable="on">Icelandic</div>
+    
+        <div class="listbox-option state-unselectable" data-value="id" unselectable="on">Indonesian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ga" unselectable="on">Irish</div>
+    
+        <div class="listbox-option state-unselectable" data-value="it" unselectable="on">Italian</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ja" unselectable="on">Japanese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="jv" unselectable="on">Javanese</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="kn" unselectable="on">Kannada</div>
+    
+        <div class="listbox-option state-unselectable" data-value="kk" unselectable="on">Kazakh</div>
+    
+        <div class="listbox-option state-unselectable" data-value="kazlat" unselectable="on">Kazakh (Latin)<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="km" unselectable="on">Khmer</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ko" unselectable="on">Korean</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ky" unselectable="on">Kyrgyz<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="lo" unselectable="on">Lao<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="la" unselectable="on">Latin</div>
+    
+        <div class="listbox-option state-unselectable" data-value="lv" unselectable="on">Latvian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="lt" unselectable="on">Lithuanian</div>
+    </div><div class="listbox-column" unselectable="on">
+        <div class="listbox-option state-unselectable" data-value="lb" unselectable="on">Luxembourgish</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="mk" unselectable="on">Macedonian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="mg" unselectable="on">Malagasy</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ms" unselectable="on">Malay</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ml" unselectable="on">Malayalam<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="mt" unselectable="on">Maltese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="mi" unselectable="on">Maori</div>
+    
+        <div class="listbox-option state-unselectable" data-value="mr" unselectable="on">Marathi</div>
+    
+        <div class="listbox-option state-unselectable" data-value="mhr" unselectable="on">Mari<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="mn" unselectable="on">Mongolian<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ne" unselectable="on">Nepali</div>
+    
+        <div class="listbox-option state-unselectable" data-value="no" unselectable="on">Norwegian</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="pap" unselectable="on">Papiamento<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="fa" unselectable="on">Persian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="pl" unselectable="on">Polish</div>
+    
+        <div class="listbox-option state-unselectable" data-value="pt" unselectable="on">Portuguese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="pa" unselectable="on">Punjabi</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="ro" unselectable="on">Romanian</div>
+    </div><div class="listbox-column" unselectable="on">
+        <div class="listbox-option state-selected state-unselectable" data-value="ru" unselectable="on">Russian</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="gd" unselectable="on">Scottish Gaelic</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sr" unselectable="on">Serbian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="si" unselectable="on">Sinhalese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sk" unselectable="on">Slovak</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sl" unselectable="on">Slovenian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="es" unselectable="on">Spanish</div>
+    
+        <div class="listbox-option state-unselectable" data-value="su" unselectable="on">Sundanese</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sw" unselectable="on">Swahili</div>
+    
+        <div class="listbox-option state-unselectable" data-value="sv" unselectable="on">Swedish</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="tl" unselectable="on">Tagalog</div>
+    
+        <div class="listbox-option state-unselectable" data-value="tg" unselectable="on">Tajik<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="ta" unselectable="on">Tamil<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="tt" unselectable="on">Tatar</div>
+    
+        <div class="listbox-option state-unselectable" data-value="te" unselectable="on">Telugu<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="th" unselectable="on">Thai</div>
+    
+        <div class="listbox-option state-unselectable" data-value="tr" unselectable="on">Turkish</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="udm" unselectable="on">Udmurt<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    </div><div class="listbox-column" unselectable="on">
+        <div class="listbox-option state-unselectable" data-value="uk" unselectable="on">Ukrainian</div>
+    
+        <div class="listbox-option state-unselectable" data-value="ur" unselectable="on">Urdu</div>
+    
+        <div class="listbox-option state-unselectable" data-value="uz" unselectable="on">Uzbek</div>
+    
+        <div class="listbox-option state-unselectable" data-value="uzbcyr" unselectable="on">Uzbek (Cyrillic)</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="vi" unselectable="on">Vietnamese</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="cy" unselectable="on">Welsh</div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="xh" unselectable="on">Xhosa<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option listbox-option_type_lead state-unselectable" data-value="sah" unselectable="on">Yakut<span class="listbox-option-tag listbox-option-tag_beta">β</span></div>
+    
+        <div class="listbox-option state-unselectable" data-value="yi" unselectable="on">Yiddish</div>
+    </div></div></div><div class="overlay overlay_fixed expired state-fadeaway state-unselectable"><div class="overlay-content"><div class="expired-header">Session timeout</div><div class="expired-text">Please refresh the page. The source text and translation will be saved.</div><div class="button" data-action="expiredRefresh">Refresh the page</div></div></div><div class="overlay overlay_fixed overlay_db_inactive state-fadeaway state-unselectable"><div class="overlay-content"><div class="expired-header">Could not open collections</div><div class="expired-text">Yandex.Translate could not connect to the browser's database. If this error repeats, please <a href="https://yandex.com/support/translate/troubleshooting.html" target="_blank">write the support service</a>. Please note that collections do not work in Incognito mode.</div><div class="expired-text expired-text_blocked">To open collections, restart your browser</div><div class="button" data-action="closeDbOverlay">Close</div></div></div><div id="distContainer"><div id="d0" data-tracking-data="{&quot;id&quot;: &quot;dist_banner&quot;}"></div></div>
+
+        <!-- Yandex.Metrika counter -->
+        
+            <script type="text/javascript" nonce="Dbz6mbbeTD">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    (function () {
+        var deviceType = 'desktop' || 'none';
+
+        if (deviceType === 'mobile') {
+            deviceType = 'mobile_old';
+        }
+
+        ym(28584306, 'init', {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            trackHash: true,
+            params: {
+                ui: 'en',
+                domain: 'com',
+                loggedIn: !!'',
+                view: 'desktop_new' || 'none',
+                isFirstVisit: true,
+                firstVisitSrc: 'organic' || 'none',
+                deviceType: deviceType,
+                expId: [],
+                isTurboapp: false,
+            }
+        });
+    }());
+
+    window.sendMetrikaGoal = function (goal) {
+        try {
+            ym(28584306, 'reachGoal', goal);
+        } catch (error) {}
+    };
+</script>
+
+        
+        <!-- /Yandex.Metrika counter -->
+
+        <script nonce="Dbz6mbbeTD">
+            (function () {
+                var LANDING_TYPES = { 
+                    dict: 'dict',
+                    text: 'text'
+                };
+                window.config = {
+                    SRV: 'tr-text',
+                    SID: '5fc49c72.0b53cdf5.40eafabf.47875647d22747',
+                    VER: 'v20.12.3',
+                    UID: null,
+                    LOAD_TS: '1608267184',
+                    FAMILY: 1,
+                    CSRF_TOKEN: 'bb888110160a0f6df2f23ed770b18071c7279b46:5fdc35b0',
+                    IS_FIRST_VISIT: true,
+                    CLCK_URL: 'https://yandex.com/clck/click/',
+                    CLCK_PATH: 'web_desktop.morda',
+                    DOMAIN: 'com',
+                    UI_LANG: 'en',
+                    PASSPORT: 'com',
+                    RETPATH: 'https%3A%2F%2Ftranslate.yandex.com%2F',
+                    FAV_URL: '/user/tr',
+                    FAV_URL2: '/props/api/users/None/favorites',
+                    TTS_URL: 'https://tts.voicetech.yandex.net/tts',
+                    UNIPROXY_URL: 'wss://uniproxy.alice.yandex.net/uni.ws',
+                    OPTIONS: {
+                        shift: 'Press Shift+Enter to insert a line break',
+                        speller: 'Check spelling',
+                        suggest: 'Show suggestion',
+                        autoheight: 'Auto resize',
+                        dictionary: 'Show dictionary',
+                        history: 'Translation history',
+                    },
+                    TTS_RATE: 1,
+                    TTS_LANGS: {
+                        en: 'en_GB',
+                        ru: 'ru_RU',
+                        tr: 'tr_TR',
+                        uk: 'uk_UA'
+                    },
+                    SYN_TITLES: {
+                        syn: 'Synonyms',
+                        ant: 'Antonyms',
+                        deriv: 'Related words'
+                    },
+                    SYN_TITLES2: {
+                        syn: {
+                            title: 'syn.',
+                            tooltip: 'Synonyms'
+                        },
+                        ant: {
+                            title: 'ant.',
+                            tooltip: 'Antonyms'
+                        },
+                        deriv: {
+                            title:'cogn.',
+                            tooltip: 'Related words'
+                        }
+                    },
+                    DICT_TITLES: {
+                        regular: 'Dictionary',
+                        similar: 'Related words'
+                    },
+                    MORE_MESSAGE: '{0} more',
+                    REFERENCE_TOOLTIP_MESSAGES: {
+                        book: '{0}, “{1}”. Translated by {2}',
+                        series: 'From the series “{0}”. Directed by {1}',
+                        movie: 'From the film “{0}”. Directed by {1}'
+                    },
+                    TABS: {
+                        other: 'other translations',
+                        all: 'all'
+                    },
+                    COLLECTION_TITLES: {
+                        collection: 'My collections',
+                        subscription: 'My subscriptions',
+                        top: 'Popular collections'
+                    },
+                    PAGEVIEW: 'desktop_new',
+                    SHARE_URL: 'https://share.yandex.ru/go.xml',
+                    VOTES_URL: '/props/api/votes/trnsl',
+                    SEARCH_URL: 'https://yandex.com/search/',
+                    TABLEAU_URL: 'https://yastatic.net/tableau/tableau.html',
+                    TABLEAU_PRESET: 'com',
+                    SPELLER_URL: 'https://speller.yandex.net/services/spellservice.json/checkText',
+                    TOOLTIPS: {
+                        copy: 'Copy',
+                        copy2: 'Translation copied',
+                        sync: 'Entry not yet synced',
+                        sync2: 'Favorites limit exceeded',
+                        copyLink: 'Copy link',
+                        copyLink2: 'Link copied',
+                        download: 'Download image with text',
+                        favourite: 'Add to favorites',
+                        collections: 'Add to collection',
+                        collections2: 'Delete from collection',
+                        sttErrorOldBrowser: 'Not available in this language yet',
+                        examplesComplaint: 'Click on the inappropriate example to file the report',
+                    },
+                    TOAST_MESSAGES: {
+                        unsupportedFormat: 'The file format is not supported. Select a {0} document or an image',
+                        maxSize: 'The file size exceeds {0} MB',
+                        quotaExceeded: 'Unable to get the translation. Make sure that Incognito mode is off and free space is available on your disk'
+                    },
+                    ALLOWED_FORMATS: '.doc, .docx, .pdf, .xls, .xlsx, .ppt, .pptx',
+                    DETECTOR_URL: 'https://translate.yandex.net/api/v1/tr.json/detect',
+                    TRANSLIT_URL: 'https://translate.yandex.net/translit/translit',
+                    COMPLAINT_URL: '/community/api/projects/574d59cb253352f1c33c704e/contribs',
+                    COLLECTIONS_URL: '/props/api/',
+                    SPELLER_LANGS: {"uk":true,"en":true,"ru":true},
+                    AUTO_SPELLER_LANGS: {
+                        en: true,
+                        ru: true
+                    },
+                    TABLEAU_DELAY: 300,
+                    POPUP_DELAY: 3000,
+                    SPEECHKIT_KEY: 'bf4277fc-06c0-405a-b278-b796bbbd3f27',
+                    SUGGESTIONS_URL: 'https://predictor.yandex.net/predict.json/translatePredict',
+                    PREDICTOR_URL: 'https://predictor.yandex.net/suggest.json/complete',
+                    TRANSLATE_PREDICTOR_URL: 'https://translate.yandex.net/api/v1/tr.json/translateSentence',
+                    DICTIONARY_URL: 'https://dictionary.yandex.net/dicservice.json/lookupMultiple',
+                    EXAMPLES_URL: 'https://dictionary.yandex.net/dicservice.json/queryCorpus',
+                    TRANSLATOR_URL: 'https://translate.yandex.net/api/v1/tr.json/translate',
+                    ALTERNATIVES_URL: 'https://translate.yandex.net/api/v1/tr.json/suggestAlternatives',
+                    TRANSLATOR_EXTRA_OPTIONS: 0,
+                    SOCIAL_SERVICES: {
+                        vkontakte: 'ВКонтакте',
+                        facebook: 'Facebook',
+                        odnoklassniki: 'Одноклассники'
+                    },
+                    TRANSLIT_LANGS: {
+                        am: true,
+                        bn: true,
+                        el: true,
+                        gu: true,
+                        he: true,
+                        hi: true,
+                        hy: true,
+                        ja: true,
+                        ka: true,
+                        kn: true,
+                        ko: true,
+                        ml: true,
+                        mr: true,
+                        ne: true,
+                        pa: true,
+                        si: true,
+                        ta: true,
+                        te: true,
+                        th: true,
+                        yi: true,
+                        zh: true
+                    },
+                    PREDICTOR_LANGS: {"el":true,"es":true,"hr":true,"fi":true,"gl":true,"is":true,"he":true,"vi":true,"it":true,"ms":true,"mhr":true,"hy":true,"id":true,"tl":true,"sk":true,"kk":true,"pt":true,"en":true,"mn":true,"cy":true,"be":true,"eu":true,"mk":true,"cs":true,"hu":true,"lt":true,"af":true,"ar":true,"sw":true,"et":true,"ba":true,"ka":true,"tg":true,"uk":true,"sr":true,"mg":true,"fr":true,"ca":true,"ro":true,"bg":true,"de":true,"ht":true,"ga":true,"udm":true,"nl":true,"tt":true,"da":true,"mrj":true,"pl":true,"sl":true,"lb":true,"ky":true,"tr":true,"az":true,"la":true,"ru":true,"no":true,"lv":true,"sv":true,"mt":true,"bs":true,"uz":true,"sq":true},
+                    ALTERNATIVES_LANGS: {
+                        'en-ru': true,
+                        'ru-en': true
+                    },
+                    TRANSLATOR_LANGS: {"af":"Afrikaans","sq":"Albanian","am":"Amharic","ar":"Arabic","hy":"Armenian","az":"Azerbaijani","ba":"Bashkir","eu":"Basque","be":"Belarusian","bn":"Bengali","bs":"Bosnian","bg":"Bulgarian","my":"Burmese","ca":"Catalan","ceb":"Cebuano","zh":"Chinese","cv":"Chuvash","hr":"Croatian","cs":"Czech","da":"Danish","nl":"Dutch","sjn":"Elvish (Sindarin)","emj":"Emoji","en":"English","eo":"Esperanto","et":"Estonian","fi":"Finnish","fr":"French","gl":"Galician","ka":"Georgian","de":"German","el":"Greek","gu":"Gujarati","ht":"Haitian","he":"Hebrew","mrj":"Hill Mari","hi":"Hindi","hu":"Hungarian","is":"Icelandic","id":"Indonesian","ga":"Irish","it":"Italian","ja":"Japanese","jv":"Javanese","kn":"Kannada","kk":"Kazakh","kazlat":"Kazakh (Latin)","km":"Khmer","ko":"Korean","ky":"Kyrgyz","lo":"Lao","la":"Latin","lv":"Latvian","lt":"Lithuanian","lb":"Luxembourgish","mk":"Macedonian","mg":"Malagasy","ms":"Malay","ml":"Malayalam","mt":"Maltese","mi":"Maori","mr":"Marathi","mhr":"Mari","mn":"Mongolian","ne":"Nepali","no":"Norwegian","pap":"Papiamento","fa":"Persian","pl":"Polish","pt":"Portuguese","pa":"Punjabi","ro":"Romanian","ru":"Russian","gd":"Scottish Gaelic","sr":"Serbian","si":"Sinhalese","sk":"Slovak","sl":"Slovenian","es":"Spanish","su":"Sundanese","sw":"Swahili","sv":"Swedish","tl":"Tagalog","tg":"Tajik","ta":"Tamil","tt":"Tatar","te":"Telugu","th":"Thai","tr":"Turkish","udm":"Udmurt","uk":"Ukrainian","ur":"Urdu","uz":"Uzbek","uzbcyr":"Uzbek (Cyrillic)","vi":"Vietnamese","cy":"Welsh","xh":"Xhosa","sah":"Yakut","yi":"Yiddish"},
+                    DICTIONARY_LANGS: {"ru-nl":true,"lv-en":true,"de-de":true,"tr-ru":true,"fi-fi":true,"en-en":true,"pl-ru":true,"be-be":true,"sk-en":true,"cs-ru":true,"en-fi":true,"ru-be":true,"no-ru":true,"pt-en":true,"hu-hu":true,"es-en":true,"sv-en":true,"ru-pl":true,"ru-lt":true,"lt-en":true,"es-es":true,"tr-de":true,"mrj-ru":true,"bg-ru":true,"ru-en":true,"el-en":true,"be-ru":true,"en-lv":true,"ru-sk":true,"nl-ru":true,"sv-ru":true,"ru-fi":true,"de-en":true,"en-et":true,"ru-es":true,"ru-tt":true,"de-ru":true,"ru-el":true,"ru-fr":true,"hu-ru":true,"nl-en":true,"uk-uk":true,"ru-pt":true,"no-en":true,"ru-ru":true,"uk-en":true,"en-el":true,"fr-ru":true,"cs-en":true,"ru-tr":true,"et-ru":true,"ru-uk":true,"en-ru":true,"en-nl":true,"et-en":true,"ru-da":true,"en-lt":true,"ru-de":true,"el-ru":true,"fr-en":true,"en-sv":true,"en-it":true,"ru-mhr":true,"de-tr":true,"fi-ru":true,"en-uk":true,"en-da":true,"sk-ru":true,"fi-en":true,"en-pt":true,"it-ru":true,"en-sk":true,"mhr-ru":true,"it-en":true,"uk-ru":true,"ru-cs":true,"pt-ru":true,"it-it":true,"ru-lv":true,"fr-fr":true,"en-cs":true,"en-de":true,"tt-ru":true,"ru-it":true,"lt-lt":true,"tr-en":true,"da-en":true,"en-no":true,"cs-cs":true,"en-tr":true,"ru-bg":true,"ru-hu":true,"ru-no":true,"zh-ru":true,"lv-ru":true,"en-es":true,"ru-zh":true,"ru-et":true,"da-ru":true,"en-fr":true,"ru-mrj":true,"es-ru":true,"ru-sv":true,"lt-ru":true},
+                    EXAMPLE_LANGS: {"it-ru":true,"ru-de":true,"de-en":true,"en-es":true,"it-en":true,"fr-ru":true,"en-it":true,"de-ru":true,"ru-es":true,"en-ru":true,"ru-fr":true,"es-ru":true,"ru-en":true,"es-en":true,"en-fr":true,"ru-it":true,"en-de":true,"fr-en":true},
+                    DERIV_LANGS: {
+                        cs: true,
+                        en: true,
+                        ru: true
+                    },
+                    ANT_LANGS: {
+                        cs: true,
+                        en: true,
+                        ru: true
+                    },
+                    TRANSLATOR_LANGS_TAGS: {"am":["beta"],"kazlat":["beta"],"ky":["beta"],"lo":["beta"],"mhr":["beta"],"ml":["beta"],"mn":["beta"],"mrj":["beta"],"my":["beta"],"pap":["beta"],"sah":["beta"],"sjn":["alpha"],"ta":["beta"],"te":["beta"],"tg":["beta"],"udm":["beta"],"xh":["beta"]},
+                    EXTERNAL_SERVICES: {
+                        Google: {
+                            href: 'https://translate.google.com/',
+                            textParam: 'q',
+                            srcLangParam: 'sl',
+                            dstLangParam: 'tl'
+                        },
+                        Bing: {
+                            href: 'https://www.bing.com/translator/',
+                            textParam: 'text',
+                            srcLangParam: 'from',
+                            dstLangParam: 'to'
+                        }
+                    },
+                    FAV_SORT_ITEMS: {
+                        date: 'By date added',
+                        name: 'Alphabetically',
+                        length: 'By text length'
+                    },
+                    COLLECTION_UTM_SOURCE: 'collection_share_desktop',
+                    COLLECTION_TOAST_MESSAGES: {
+                        added: 'Translation added to the "{0}" collection',
+                        limit: 'The "{0}" collection is full',
+                        deleted: 'Deleted from "{0}"'
+                    },
+                    COLLECTION_MENU_ITEMS: {
+                        select: {
+                            icon: 'lines',
+                            title: 'Select entries',
+                            action: 'editRecords'
+                        },
+                        edit: {
+                            icon: 'pencil',
+                            title: 'Rename',
+                            action: 'editCollection'
+                        },
+                        'delete': {
+                            icon: 'trash',
+                            title: 'Delete collection',
+                            action: 'deleteCollection',
+                            confirm: 'Are you sure you want to delete this collection?'
+                        }
+                    },
+                    HISTORY_MENU_ITEMS: {
+                        disable_history: {
+                            icon: 'disable',
+                            title: 'Turn off history',
+                            action: 'disableHistory'
+                        },
+                        select: {
+                            icon: 'lines',
+                            title: 'Select entries',
+                            action: 'editRecords'
+                        },
+                        'delete': {
+                            icon: 'trash',
+                            title: 'Clear',
+                            action: 'clearCollection',
+                            confirm: 'Are you sure you want to delete these entries?'
+                        },
+                    },
+                    SUBSCRIPTION_MENU_ITEMS: {
+                        copy: {
+                            icon: 'lines',
+                            title: 'Copy entries',
+                            action: 'editSubscriptionRecords'
+                        },
+                        unsubscribe: {
+                            icon: 'trash',
+                            title: 'Unsubscribe',
+                            action: 'unsubscribeFromCollection',
+                            confirm: 'Are you sure you want to unsubscribe from this collection?',
+                        },
+                    },
+                    USE_FAKEAREA: true,
+                    DEFAULT_FAV_SORT: 'date',
+                    TR_FILENAME: 'elvish.png',
+                    DEFAULT_FAV_NAME: 'Favorites',
+                    DEFAULT_COLLECTION_NAME: 'New collection',
+                    DEFAULT_HISTORY_NAME: 'History',
+                    COLLECTIONS_PATHNAME: '/collections',
+                    MAX_FAV_ITEMS2: 2500,
+                    MAX_COLLECTIONS: 20,
+                    MAX_COL_LENGTH: 15,
+                    MAX_COL_LENGTH_NARROW_SCREEN: 18,
+                    NARROW_SCREEN_WIDTH: 1100,
+                    MAX_UNIPROXY_TTS_LENGTH: 300,
+                    MAX_TTS_LENGTH: 100,
+                    MAX_DICT_QUERY: 100,
+                    MAX_EXMP_QUERY: 600,
+                    MAX_EXAMPLE_POPUP_LENGTH: 80,
+                    MAX_EXAMPLE_LENGTH: 200,
+                    MAX_EXMP_DST_QUERY: 100,
+                    LONGTEXT_LENGTH: 150,
+                    MAX_SYNC_LENGTH: 1000,
+                    INVALID_URL_LANGS: {
+                        sjn: true
+                    },
+                    PRESYNC_TIMEOUT: 15000,
+                    SPEECHKIT_TIMEOUT: 5000,
+                    TOAST_DELAY: 4000,
+                    MAX_SPELLER_LENGTH: 1000,
+                    MAX_SYNONYMS_ITEMS: 8,
+                    MAX_SYNONYMS_ITEMS2: 64,
+                    MAX_FAV_TEXT_LENGTH: 300,
+                    SESSION_RESUME_TIME: 1000 * 60 * 30,
+                    POPUP_INDENT: 50,
+                    COLLAPSE_THRESHOLD: 8,
+                    MAX_DICT_WORD_COUNT: 3,
+                    MAX_EXMP_WORD_COUNT: 7,
+                    MIN_EXAMPLE_COUNT: 2,
+                    MAX_EXAMPLE_COUNT: 3,
+                    DICTIONARY_COUNT: 3,
+                    MAX_WARNING_SHOW: 3,
+                    MAX_FILE_SIZE_MB: 5,
+                    MAX_PREDICTOR_ITEMS: 1,
+                    MIN_PREDICTOR_WORDS: 5,
+                    MAX_PREDICTOR_WORDS: 20,
+                    MAX_PREDICTOR_QUERY: 1000,
+                    MAX_SHARE_TEXT_LENGTH: 500,
+                    MAX_TRANSLATOR_QUERY: 10000,
+                    MAX_RECENT_LANGUAGES: 7,
+                    MIN_TEXTBOX_HEIGHT: 114,
+                    MIN_MAIN_CONTAINER_HEIGHT: 160,
+                    COLLAPSED_HEIGHT: 270,
+                    COLLECTION_BANNER_DELAY: 86400 * 1000, // 1 day
+                    COLLECTION_PROMO_MIN_SCREEN_HEIGHT: 620,
+                    MAX_NATIVE_TTS_LENGTH: 300,
+                    MAX_EDITOR_TEXTLENGTH: 2000,
+                    MAX_TRANSLIT_TEXTLENGTH: 100,
+                    MAX_HISTORY_RECORDS: 1000,
+                    MAX_HISTORY_SHOW: 10,
+                    ENABLE_DOM_TRACKING: true,
+                    ENABLE_UNIPROXY_TTS_PRIORITY: false,
+                    ENABLE_UNIPROXY_ASR_PRIORITY: false,
+                    ENABLE_SPEECHKIT_PRIORITY: false,
+                    ENABLE_UNIPROXY: 0,
+                    FORCE_UNIPROXY: false,
+                    REPLACE_SPEECHKIT: false,
+                    ENABLE_TTS_SLOWING: false,
+                    ENABLE_NATIVE_ASR: false,
+                    ENABLE_DIST_BANNER: false,
+                    ENABLE_HISTORY_SYNC: false,
+
+                    FORCE_SKIT_ASR_URL: null,
+                    FORCE_SKIT_TTS_URL: null,
+
+                    ENABLE_COLLECTION: false,
+                    ENABLE_LANG_SWITCHERS: false,
+
+                    LANDING_TYPE: null,
+                    LANDING_TYPES: LANDING_TYPES,
+
+                    ENABLE_SUGGESTIONS: false,
+                    SUGGESTIONS_CONF: null,
+
+                    DISABLE_DICTIONARY: false,
+                    DISABLE_EXAMPLES: false,
+                    EXAMPLES_RANDOM_RANKING: false,
+                    REDUCE_DICT_EXAMPLES: false,
+
+                    LOCALIZATIONS: {
+                        collectionSubscribe: 'Subscribe',
+                        selectUnpinTooltip: 'Unpin',
+                        selectPinTooltip: 'Pin',
+                        dictionaryExamplesShow: 'Show examples',
+                        dictionaryExamplesHide: 'Hide examples',
+                        dictionaryLabelModern: 'Neologism',
+                        dictHide: 'hide',
+                        exampleValuedGoodTooltip: 'Good example',
+                        exampleValuedBadTooltip: 'Bad example',
+                        examplesHide: 'hide',
+                        collectionsBrokenSubscription: 'This collection is not updated',
+                        collectionsPrivateTooltip: 'Private collection',
+                        collectionsSubscribed: 'You are subscribed',
+                        collectionsButtonSubscribe: 'Subscribe',
+                        collectionsRecordsEmpty: 'There are no translations in this collection',
+                        favouritesFilterEmpty: 'No matches were found',
+                        collectionsFavButtonDeleteTooltip: 'Delete from collection',
+                        collectionsHeaderRecords: 'Translations',
+                        collectionsHeaderSubscribers: 'Subscribers',
+                        collectionsListItemCreate: 'Create new',
+                        collectionsChange: 'Change collection',
+                        popupEmpty: 'No usage examples found. Change the wording or shorten the entry',
+                        popupMoreExamples: 'See other meanings',
+                        reportError: 'Report error',
+                        historyTitle: 'Recent',
+                        historyButton: 'History',
+                    }
+                }
+            }());
+        </script>
+        <script src="https://yastatic.net/s3/translate/v20.12.3/js/bundles/text.js" type="text/javascript" charset="UTF-8" crossorigin="anonymous"></script>
+        <script src="https://yastatic.net/s3/translate/v20.12.3/js/webspeechkit-settings.js" crossorigin="anonymous"></script>
+        <script src="https://yastatic.net/s3/translate/v20.12.3/js/webspeechkit.js" crossorigin="anonymous"></script>
+        <script src="https://yastatic.net/s3/translate/v20.12.3/js/keyboard.js" crossorigin="anonymous"></script>
+        <script nonce="Dbz6mbbeTD">
+            initTextApp(window.config);
+        </script>
+
+        
+
+        
+
+        
+    
+
+</body></html>
+    
+</body>
+</html>
